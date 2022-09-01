@@ -398,7 +398,7 @@ void HotkeyManagerPlugin::Register(
   UINT virtual_key_code = GetVirtualKeyCodeFromString(key_code);
   ::RegisterHotKey(
       ::GetAncestor(registrar_->GetView()->GetNativeWindow(), GA_ROOT),
-      hotkey_id, fs_modifiers, virtual_key_code);
+      hotkey_id, fs_modifiers | MOD_NOREPEAT, virtual_key_code);
   hotkey_id_map_.insert(std::make_pair(identifier, hotkey_id));
   result->Success(flutter::EncodableValue(true));
 }
