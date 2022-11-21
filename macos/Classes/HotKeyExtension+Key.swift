@@ -131,8 +131,8 @@ extension Key {
         case "numpadDecimal": self = .keypadDecimal
         case "numpadDivide": self = .keypadDivide
         case "numpadEnter": self = .keypadEnter
-        case "numpadEquals": self = .keypadEquals
-        case "numpadMinus": self = .keypadMinus
+        case "numpadEqual": self = .keypadEquals
+        case "numpadSubtract": self = .keypadMinus
         case "numpadMultiply": self = .keypadMultiply
         case "numpadAdd": self = .keypadPlus
             
